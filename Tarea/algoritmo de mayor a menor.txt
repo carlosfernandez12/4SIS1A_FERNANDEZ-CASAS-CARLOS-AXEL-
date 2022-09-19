@@ -1,0 +1,39 @@
+//fernandez casas carlos axel algoritmo mayor y menor 
+Algoritmo Mayor_y_menor_de_A_B_y_C
+	A<-0;
+	B<-0;
+	C<-0;
+	
+	Escribir "dame tus tres datos";
+	leer A,B,C;
+	
+	Si A>B y A>C  Entonces
+		escribir "el dato es mayor que el primero ", A;
+	SiNo
+		si B>A y B>C Entonces
+			Escribir "el segundo dato es el mayor ", B;
+		SiNo
+		    si C>A y C>B Entonces
+			    Escribir "el tercer dato es mayor ", C;
+			     SiNo
+				  ESCRIBIR "TODO ES IGUAL";
+					
+				FinSi
+			FinSi
+			
+	Fin Si 
+	
+	SI A<B y A<C Entonces
+		escribir "el primer dato es el menor ",A;
+	SiNo
+		SI B<A y B<C Entonces
+			ESCRIBIR "el segundo dato es el menor ", B;
+		SiNo
+			si C<A y C<B Entonces
+				escribir "el tercer dato es menor ", C;
+			FinSi
+			
+		FinSi
+	FinSi
+	
+FinAlgoritmo

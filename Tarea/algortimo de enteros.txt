@@ -1,0 +1,11 @@
+//fernandez casas carlos axel algortimo sumatoria de enteros
+Algoritmo sumatoria_de_enteros
+	limite = 10;  
+	definir suma como entero; 
+	Para i<-0 hasta limite Con Paso 1  paso Hacer 
+		suma = suma + i; ; 
+		; escribir suma; 
+		
+	Fin Para
+	 
+FinAlgoritmo

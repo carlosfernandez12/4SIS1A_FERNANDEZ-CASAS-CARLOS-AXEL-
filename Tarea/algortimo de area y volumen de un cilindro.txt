@@ -1,0 +1,15 @@
+//fernandez casas carlos axel algoritmo area y volumen de un cilindro 
+Algoritmo Area_y_Volumen_de_un_cilindro
+	Escribir "Ingresa el radio del cilindro (R): ";
+	Leer R;
+	Escribir "Ingresa la altura del cilindro(H) : ";
+	Leer H;
+	Si R > 3 Entonces
+		Volumen = 3.1416*(R^2)*H;
+		Area = 2*3.1416*R*H;
+		Escribir "El volumen del cilindro es : ",Volumen," y su area es: ",Area;
+	SiNo
+		Escribir "No está permitido que el radio sea igual o menor a 3.";
+		
+	FinSi  
+FinAlgoritmo

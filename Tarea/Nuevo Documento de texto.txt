@@ -1,0 +1,17 @@
+//esto es un comentario 
+/*
+*este comentario nos sirve para poder tener varias lineas comentadas del codigo 
+*
+*todo programa en java, manejaclases, una clase es un objeto del mundo real
+*/
+class holamundo{
+//cuerpo del progama 
+/*
+*aqui es donde nosotros codificamos todos los elementos del programa, funciones, estruturas, variables y metodos
+*toda clase debe de tener un metodo principal
+*/
+
+run|debug
+public static void main (string [] args){
+ system.out.println("hola mundo");
+}

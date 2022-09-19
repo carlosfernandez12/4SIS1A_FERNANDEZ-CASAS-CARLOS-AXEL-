@@ -1,0 +1,12 @@
+//fernandez casas carlos axel algoritmo hipotenusa de 2 catetos
+Algoritmo Hipotenusa_de_un_triangulo_rectangulo
+	Definir CatA, CatB, Hip Como Real
+	Escribir ' Hipotenusa ';
+	Escribir 'Cateto A: ';
+	Leer CatA;
+	Escribir 'Cateto B: ';
+	Leer CatB;
+	Hip = Raiz(CatA^2 + CatB^2);
+	Escribir 'La Hipotenusa es : ',Hip;
+	
+FinAlgoritmo
