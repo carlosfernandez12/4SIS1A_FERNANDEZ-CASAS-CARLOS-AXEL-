@@ -179,8 +179,9 @@ public class Figura {
 
             perimetro = (lado+lado2+lado3+lado4); 
 
-            System.out.println("El Perimetro del rectangulo es : "+perimetro); 
+            System.out.println("El Perimetro del rectangulo es : "+perimetro);
             break; 
+            
 
             
 
