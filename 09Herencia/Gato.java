@@ -7,11 +7,13 @@
  * perro es la clase hija
  */
 
-
+import java.util.Scanner;
 public class Gato extends Animal{
     //aqui deberia de venir String
+
     int num_vidas;
 
+    Animal ani = new Animal();
     public Gato(){
 
     }
@@ -34,8 +36,13 @@ public class Gato extends Animal{
 
     //el metodo propio del perro
     public void mostrarGato(){
-        System.out.println("El nombre del michi es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
-        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getEdad() + "\n" + "Su num de vidas es: " + num_vidas);
+
+        ani.entrada_de_datos();
+        ani.mostrar();
+        
+
+
+        
     }
 
 

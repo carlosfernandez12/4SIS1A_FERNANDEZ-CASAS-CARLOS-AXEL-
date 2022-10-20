@@ -1,25 +1,15 @@
-/** Para poder aplicar la herencia de una clase, se utiliza la palabra reservada 
- * 
- * extends 
- * 
- * un perro se extiende de un animal
- * animal es la clase padre
- * perro es la clase hija
- */
-
 import java.util.Scanner; 
-public class Perro extends Animal{
+public class Huron extends Animal{
     //aqui deberia de venir String
     String ladrido;
     Scanner entrada = new Scanner(System.in); 
-
     Animal ani = new Animal();
 
-    public Perro(){
+    public Huron(){
 
     }
 
-    public Perro(String nombre, String raza, String tipo_alimento, int edad, String ladrido){
+    public Huron(String nombre, String raza, String tipo_alimento, int edad, String ladrido){
         //debo de poder acceder a la clase super
         super(nombre, raza, tipo_alimento, edad);
         this.ladrido = ladrido;
@@ -36,7 +26,7 @@ public class Perro extends Animal{
     }
 
     //el metodo propio del perro
-    public void mostrarPerro(){
+    public void mostrarHuron(){
 
         ani.entrada_de_datos();
         System.out.println("que sonido emite el animalito : ");
@@ -45,6 +35,7 @@ public class Perro extends Animal{
         System.out.println("Sonido : "+ ladrido );
       
     }
+    
 
 
 

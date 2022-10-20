@@ -1,33 +1,42 @@
+import java.util.Scanner; 
 public class Cuyo extends Animal{
     //aqui deberia de venir String
-    String ruidito;
+    String ladrido;
+    Scanner entrada= new Scanner (System.in); 
+    Animal ani = new Animal();
+
 
     public Cuyo(){
 
     }
 
-    public Cuyo(String nombre, String raza, String tipo_alimento, int edad, String ruidito){
+    public Cuyo(String nombre, String raza, String tipo_alimento, int edad, String ladrido){
         //debo de poder acceder a la clase super
         super(nombre, raza, tipo_alimento, edad);
-        this.ruidito= ruidito;
+        this.ladrido = ladrido;
     }
 
     //recibir
-    public String getruidito(){
-        return ruidito;
+    public String getLadrido(){
+        return ladrido;
     }
 
     //enviar
-    public void setruidito(String ruidito){
-        this.ruidito = ruidito;
+    public void setLadrido(String ladrido){
+        this.ladrido = ladrido;
     }
 
-    //el metodo propio del hasmter
+    //el metodo propio del perro
     public void mostrarCuyo(){
-        System.out.println("El nombre del Cuyo es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
-        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getEdad() + "\n" + "Su ruidito es: " + ruidito);
-    }
 
+        ani.entrada_de_datos();
+        System.out.println("que sonido emite el animalito : ");
+        ladrido = entrada.nextLine(); 
+        ani.mostrar();
+        System.out.println("Sonido : "+ ladrido );
+      
+    }
+    
 
 
 

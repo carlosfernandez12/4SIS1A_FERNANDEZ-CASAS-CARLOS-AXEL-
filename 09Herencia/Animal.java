@@ -1,7 +1,7 @@
 /**
  * Vamos a crear una tienda de mascotas para adopcion
  */
-
+import java.util.Scanner;
 public class Animal {
     /*
     
@@ -11,6 +11,7 @@ public class Animal {
     //definir variables
     private String nombre, raza, tipo_alimento;
     private int edad;
+    Scanner entrada = new Scanner(System.in);
 
     /**El constructor nos sirve para poder declarar la existenica de una clase, para poder inicializar las variables de la clase y para crear instancias de la clase, a partir de la obtencion de memoria */
 
@@ -68,11 +69,30 @@ public class Animal {
     public int getEdad(){
         return edad;
     }
-
     //enviar
     public void setEdad(int edad){
         this.edad = edad;
     }
+
+    public void entrada_de_datos(){
+
+        System.out.println("Dame el nombre del animalito :");
+        nombre = entrada.nextLine();
+        System.out.println("De que raza es el animalito ");
+        raza = entrada.nextLine();
+        System.out.println("Que come el animalito ");
+        tipo_alimento = entrada.nextLine();
+        System.out.println("Que edad tiene el animalito :");
+        edad = entrada.nextInt();
+    }
+    public void mostrar(){
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+        System.out.println("\t\t\t FICHA DEL ANIMALITO ");
+        System.out.println("\n\n\nNnombre : " + nombre +"\nRaza : " + raza + "\nAlimento  :"+ tipo_alimento + "\nEdad :" + edad);
+    }
+
+    
 
 
     
