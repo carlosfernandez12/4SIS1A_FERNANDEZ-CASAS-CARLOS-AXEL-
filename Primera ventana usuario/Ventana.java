@@ -63,7 +63,7 @@ public class Ventana extends JFrame implements ActionListener{
             public void actionPerformed(java.awt.event.ActionEvent evt) {
             
                 Ventana2 newFrame = new Ventana2();
-       newFrame.setVisible(true);
+                 newFrame.setVisible(true);
             }
 
             
@@ -81,8 +81,8 @@ public class Ventana extends JFrame implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String usuarioUser = "Sebastian";
-                String usuarioPass = "Ortega";
+                String usuarioUser = "AxelFernandez";
+                String usuarioPass = "12345";
 
                 if (usuarioUser.equals(userBox.getText())) {
                     String contrasena = "";

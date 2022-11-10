@@ -9,8 +9,8 @@ public class Ventana2 extends JFrame{
     
         this.setSize(800,500);
         setTitle("REGISRTO");
-        setLocation(500,250); //localisacion de tu pantalla
-        setLocationRelativeTo(null);//centro de pantalla pra todo tipo de tamaño de compu
+        setLocation(500,250); 
+        setLocationRelativeTo(null);
         JLabel etiqueta1 = new JLabel();
         etiqueta1.setText("REGISRTO ");
        
@@ -38,7 +38,7 @@ public class Ventana2 extends JFrame{
     
     
     panel.setLayout(null);
-    this.getContentPane().add(panel);
+    this.getContentPane().add (panel);
         
     
   
@@ -123,10 +123,10 @@ public class Ventana2 extends JFrame{
     }
     
     private void colocarBotones(){
-        JButton boton1 = new JButton("ENVIAR");
+        JButton boton1 = new JButton("CONFIRMAR");
         boton1.setBounds(450,380,120,30);
         boton1.setEnabled(true);
-        panel.add(boton1);
+        panel.add (boton1);
         
         
     }
