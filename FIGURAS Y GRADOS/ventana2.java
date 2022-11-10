@@ -31,6 +31,7 @@ public class ventana2 extends JFrame implements ActionListener {
     private JTextField userBox;
     private JPasswordField passBox;
 
+    // Constructor de la ventana del login.
     public ventana2() {
         this.setTitle("FIGURAS GEOMETRICAS");
         this.setSize(370, 170);
@@ -45,7 +46,7 @@ public class ventana2 extends JFrame implements ActionListener {
 
     }
 
-    
+    // Metodo para inicializar
     private void iniciarComponentes() {
         colocarPaneles();
         colocarBotones();
@@ -54,10 +55,10 @@ public class ventana2 extends JFrame implements ActionListener {
     }
 
     private void colocarPaneles() {
-        
+        // Panel principal
         mainPanel = new JPanel();
         mainPanel.setLayout(null);
-        this.getContentPane().add(mainPanel); 
+        this.getContentPane().add(mainPanel); // Agregamos el panel
 
     }
 
@@ -74,14 +75,14 @@ public class ventana2 extends JFrame implements ActionListener {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
 
-                Circulo Newframe = new Circulo();
-                Newframe.setVisible(true);
+                Circulo newFrame = new Circulo();
+                newFrame.setVisible(true);
             }
 
         });
         mainPanel.add(registroButton);
 
-        
+        // ----------------------------
 
         JButton trianButton = new JButton("TRIANGULO");
         trianButton.setBounds(180, 80, 120, 30);
@@ -97,7 +98,7 @@ public class ventana2 extends JFrame implements ActionListener {
         });
         mainPanel.add(trianButton);
 
-        
+        // -------------------------------------
 
         JButton rectanButton = new JButton("RECTANGULO");
         rectanButton.setBounds(30, 80, 120, 30);
@@ -113,7 +114,7 @@ public class ventana2 extends JFrame implements ActionListener {
         });
         mainPanel.add(rectanButton);
 
-        
+        // -----------------------------
 
         JButton loginButton = new JButton("CUADRADO");
         loginButton.setBounds(30, 40, 120, 25);
@@ -138,14 +139,14 @@ public class ventana2 extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        ventana mainPanel = new ventana();
+        Ventana mainPanel = new Ventana();
         mainPanel.setVisible(true);
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+        // TODO Auto-generated method stub
 
     }
 
