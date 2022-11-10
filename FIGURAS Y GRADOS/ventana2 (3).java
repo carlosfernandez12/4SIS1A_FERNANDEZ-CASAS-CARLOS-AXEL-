@@ -1,5 +1,5 @@
-//Fernandez Casas Carlos Axel 
-//Primera ventana 
+package menu;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,20 +12,35 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 
-public class Ventana extends JFrame implements ActionListener{
+public class ventana2 extends JFrame implements ActionListener{
+
+    private final class ActionListenerImplementation2 implements ActionListener {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        
+            
+        }
+    }
+
+    private final class ActionListenerImplementation implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
 
     private JPanel mainPanel;
     private JTextField userBox;
     private JPasswordField passBox;
 
     //Constructor de la ventana del login.
-    public Ventana() {
-        this.setTitle("DORMIDITOS");
+    public ventana2() {
+        this.setTitle("figuritas");
         this.setSize(370, 170);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
          JLabel etiqueta1 = new JLabel();
-        etiqueta1.setText("REGISRTO DE MIMIDOS");
+        etiqueta1.setText("figuritas");
         
          setDefaultCloseOperation(EXIT_ON_CLOSE);
         
@@ -55,17 +70,18 @@ public class Ventana extends JFrame implements ActionListener{
 
         userBox = new JTextField();
         passBox = new JPasswordField();
+        userBox = new JTextField();
 
-        //Boton de salir
-        JButton registroButton = new JButton("Registrarse");
+        
+        JButton registroButton = new JButton("circulo");
         registroButton.setBounds(180, 80, 120, 30);
         registroButton.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
             
-                Ventana2 newFrame = new Ventana2();
-       newFrame.setVisible(true);
+                Circulo newFrame = new Circulo();
+                newFrame.setVisible(true);
             }
 
             
@@ -73,62 +89,35 @@ public class Ventana extends JFrame implements ActionListener{
         });
         mainPanel.add(registroButton);
 
-     
 
-        JButton loginButton = new JButton("iniciar Sesion");
+        JButton loginButton = new JButton("Cuadrado");
         loginButton.setBounds(10, 80, 120, 25);
         mainPanel.add(loginButton);
 
         ActionListener userLoginButton = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String usuarioUser = "Axel";
-                String usuarioPass = "Fernandez";
-
-                if (usuarioUser.equals(userBox.getText())) {
-                    String contrasena = "";
-
-                    for (int i = 0; i < passBox.getPassword().length; i++) {
-                        contrasena += passBox.getPassword()[i];
-                    }
-
-                    if (usuarioPass.equals(contrasena)) {
-                        JOptionPane.showMessageDialog(null, "Bienvenido");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Error, contraseña incorrecta");
-                    }
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "Usuario inexistente");
-                }
+                Cuadrado newFrame = new Cuadrado();
+                newFrame.setVisible(true);
+                  
 
 
             }
         };
-
         loginButton.addActionListener(userLoginButton);
     }
+       
+    
+    
+
 
     private void colocarEtiquetas() {
 
+
         
-
-
-        //Etiqueta de usuario y contraseña
-        JLabel userLabel = new JLabel("Usuario");
-        userLabel.setBounds(10, 10, 120, 50);
+        JLabel userLabel = new JLabel("Escoje  tu figurita a calcular"); 
+        userLabel.setBounds(100, 10, 210, 50);
         mainPanel.add(userLabel);
-       
-        userBox.setBounds(160, 20, 160, 25);
-        mainPanel.add(userBox);
-
-        JLabel userPass = new JLabel("Contraseña");
-        userPass.setBounds(10, 40, 80, 50);
-        mainPanel.add(userPass);
-        passBox.setBounds(160, 50, 160, 25);
-        mainPanel.add(passBox);
-
     }
 
    
@@ -140,8 +129,8 @@ public class Ventana extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        // TODO Auto-generated method stub
+        
     }
-    
 
 }

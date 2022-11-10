@@ -1,8 +1,6 @@
 
 import javax.swing.*;
-import static java.awt.Color.black;
-import static java.awt.Color.blue;
-import static java.awt.Color.white;
+
 
 
 public class Ventana2 extends JFrame{
@@ -10,11 +8,11 @@ public class Ventana2 extends JFrame{
     public Ventana2(){
     
         this.setSize(800,500);
-        setTitle("REGISRTO DE MIMIDOS");
+        setTitle("REGISRTO");
         setLocation(500,250); //localisacion de tu pantalla
         setLocationRelativeTo(null);//centro de pantalla pra todo tipo de tamaño de compu
         JLabel etiqueta1 = new JLabel();
-        etiqueta1.setText("REGISRTO DE MIMIDOS");
+        etiqueta1.setText("REGISRTO ");
        
         iniciarComponentes();
          panel.add(etiqueta1);
@@ -38,7 +36,7 @@ public class Ventana2 extends JFrame{
         
      panel = new JPanel();
     
-    panel.setBackground(black);
+    
     panel.setLayout(null);
     this.getContentPane().add(panel);
         
@@ -51,8 +49,7 @@ public class Ventana2 extends JFrame{
     etiqueta.setText("NOMBRE:");
     etiqueta.setBounds(10,30,60,20);
     etiqueta.setOpaque(true);
-    etiqueta.setForeground(white);
-    etiqueta.setBackground(blue);
+    
     
             //campo de texto
         JTextField usertext = new JTextField(20);
@@ -64,8 +61,7 @@ public class Ventana2 extends JFrame{
     etiqueta2.setText("APELLIDO PATERNO:");
     etiqueta2.setBounds(10,60,120,20);
     etiqueta2.setOpaque(true);
-    etiqueta2.setForeground(white);
-    etiqueta2.setBackground(blue);
+    
     
          //campo de texto
         JTextField text = new JTextField(20);
@@ -77,8 +73,7 @@ public class Ventana2 extends JFrame{
     etiqueta3.setText("APELLIDO MATERNO:");
     etiqueta3.setBounds(10,90,120,20);
     etiqueta3.setOpaque(true);
-    etiqueta3.setForeground(white);
-    etiqueta3.setBackground(blue);
+   
     
       //campo de texto
         JTextField texto = new JTextField(20);
@@ -91,8 +86,7 @@ public class Ventana2 extends JFrame{
     etiqueta4.setText("FECHA DE NACIMIENTO:");
     etiqueta4.setBounds(10,120,150,20);
     etiqueta4.setOpaque(true);
-    etiqueta4.setForeground(white);
-    etiqueta4.setBackground(blue);
+   
     
       //campo de texto
         JTextField texto2 = new JTextField(20);
@@ -105,8 +99,7 @@ public class Ventana2 extends JFrame{
     etiqueta5.setText("USUARIO:");
     etiqueta5.setBounds(10,150,70,20);
     etiqueta5.setOpaque(true);
-    etiqueta5.setForeground(white);
-    etiqueta5.setBackground(blue);
+    
     
       //campo de texto
         JTextField texto3 = new JTextField(20);
@@ -119,8 +112,7 @@ public class Ventana2 extends JFrame{
     etiqueta6.setText("CONTRASEÑA:");
     etiqueta6.setBounds(10,180,100,20);
     etiqueta6.setOpaque(true);
-    etiqueta6.setForeground(white);
-    etiqueta6.setBackground(blue);
+    
     
       //campo de texto
         JTextField texto4 = new JTextField(20);

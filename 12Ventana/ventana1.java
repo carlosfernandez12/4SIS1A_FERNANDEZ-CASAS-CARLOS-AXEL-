@@ -3,7 +3,7 @@ import javax.swing.*;
 
 
 
-public class Ventana {
+public class ventana1 {
     
     public static void main(String[] args){
         /**Vamos a la teoria que feo, nel a los guamazos */
