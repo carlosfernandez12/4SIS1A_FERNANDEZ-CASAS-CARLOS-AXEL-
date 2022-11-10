@@ -62,7 +62,7 @@ public class Cuadrado extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Algoritmo().setVisible(true);
+        new Cuadrado().setVisible(true);
     }
 
     public static long getSerialversionuid() {
@@ -102,4 +102,3 @@ public class Cuadrado extends JFrame implements ActionListener {
     }
 
 }
-

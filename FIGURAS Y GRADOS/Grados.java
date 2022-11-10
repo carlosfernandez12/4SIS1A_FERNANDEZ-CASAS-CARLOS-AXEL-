@@ -73,7 +73,7 @@ public class Grados extends JFrame{
         panel4.add(convertir);
         panel4.add(salir);
         contenedor.add(panel4);
-        //Etiqueta para mostrar la salida
+       
         salida = new JLabel("");
         JPanel panel5 = new JPanel();
         panel5.add(salida);
@@ -90,61 +90,59 @@ public class Grados extends JFrame{
         String hacia = a;
         double resultado = 0;
         
-        //De centrigrados a centigrados
+        
         if(desde.equals("Centigrados") && hacia.equals("Centigrados")){
             resultado = numero;
             salida.setText("Resultado: " + resultado + " centigrados");
-            //cantidad.setText("");
+            
         }
-        //De grados centigrados a grados farenheit
+        
         if(desde.equals("Centigrados") && hacia.equals("Fahrenheit")){
             resultado = 9*(numero/5)+32;
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+            
         }
-        //De grados centigrados a grados kelvin
+       
         if(desde.equals("Centigrados") && hacia.equals("Kelvin")){
             resultado = (numero + 273.15);
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+            
         }
-        ////////////////////////////////////////////////////////////////////////
-        //De farenheit a centigrados
+       
         if(desde.equals("Fahrenheit") && hacia.equals("Centigrados")){
             resultado = (5/9)*(numero-32);
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+            
         }
-        //De farenheit a farenheit
+       
         if(desde.equals("Fahrenheit") && hacia.equals("Fahrenheit")){
             resultado = numero;
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+           
         }
-        //De farenheit a kelvin
+        
         if(desde.equals("Fahrenheit") && hacia.equals("Kelvin")){
             resultado = (numero+459.67)/(9/5);
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+            
         }
-        ////////////////////////////////////////////////////////////////////////
-        //De kelvin a centigrados
+        
         if(desde.equals("Kelvin") && hacia.equals("Centigrados")){
             resultado = (numero - 273.15);
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+            
         }
-        //De kelvin a farenheit
+        
         if(desde.equals("Kelvin") && hacia.equals("Fahrenheit")){
             resultado = (numero-273)*(9/5)+32;
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+            
         }
-        //De kelvin a kelvin
+        
         if(desde.equals("Kelvin") && hacia.equals("Kelvin")){
             resultado = numero;
             salida.setText("Resultado: " + resultado);
-            //cantidad.setText("");
+           
         }
     }
  
