@@ -33,7 +33,7 @@ public class ventana2 extends JFrame implements ActionListener {
 
     // Constructor de la ventana del login.
     public ventana2() {
-        this.setTitle("FIGURAS GEOMETRICAS");
+        this.setTitle("FIGURAS GEOMETRICAS KAWAII");
         this.setSize(370, 170);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
@@ -133,7 +133,7 @@ public class ventana2 extends JFrame implements ActionListener {
 
     private void colocarEtiquetas() {
 
-        JLabel userLabel = new JLabel("ELIGE UNA FIGURA");
+        JLabel userLabel = new JLabel("ELIGE UNA FIGURITA");
         userLabel.setBounds(100, 0, 210, 50);
         mainPanel.add(userLabel);
     }

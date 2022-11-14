@@ -18,7 +18,7 @@ public class Ventana extends JFrame implements ActionListener{
 
     //Constructor de la ventana del login.
     public Ventana() {
-        this.setTitle("Hola Mudo");
+        this.setTitle("VENTANA");
         this.setSize(370, 170);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
@@ -92,13 +92,13 @@ public class Ventana extends JFrame implements ActionListener{
                     }
 
                     if (usuarioPass.equals(contrasena)) {
-                        JOptionPane.showMessageDialog(null, "Bienvenido");
+                        JOptionPane.showMessageDialog(null, "Bienvenido WIIII");
                     } else {
                         JOptionPane.showMessageDialog(null, "Error, contraseña incorrecta");
                     }
 
                 } else {
-                    JOptionPane.showMessageDialog(null, "Usuario inexistente");
+                    JOptionPane.showMessageDialog(null, "Usuario No Existe");
                 }
 
 
@@ -138,7 +138,7 @@ public class Ventana extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
     
 

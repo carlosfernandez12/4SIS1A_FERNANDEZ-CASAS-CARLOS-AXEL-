@@ -42,7 +42,7 @@ public class Ventana extends JFrame implements ActionListener{
        
 
     }
-
+ 
     private void colocarPaneles() {
        
         mainPanel = new JPanel();
@@ -105,8 +105,8 @@ public class Ventana extends JFrame implements ActionListener{
 
     private void colocarEtiquetas() {
 
-        JLabel userLabel = new JLabel("SELECCIONE UNA OPCION ");
-        userLabel.setBounds(10, 10, 170, 60);
+        JLabel userLabel = new JLabel("¡SELECCIONA UNA OPCION QUE QUIERAS! ");
+        userLabel.setBounds(40, 10, 290, 60);
         mainPanel.add(userLabel);
         
 
