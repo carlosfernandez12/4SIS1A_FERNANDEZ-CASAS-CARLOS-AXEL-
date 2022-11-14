@@ -1,12 +1,6 @@
-import java.util.concurrent.ExecutionException;
 import javax.swing.JOptionPane;
-
-import javax.swing.JOptionPane;
-
-public class Calcular {
-
-
-    public void Usuario(){
+public class Telas{
+    public static void main(String[] args) {
 
         double peso ;
         double Lana = 24.80 ; 
@@ -31,11 +25,11 @@ public class Calcular {
 
         try{
 
-            op = Integer.parseInt(JOptionPane.showInputDialog(null, "Lee las opciones de Tela : \n 1 Poliester \n 2 Lana \n 3 Algodon \n Digita tu opcion : "));
+            op = Integer.parseInt(JOptionPane.showInputDialog(null, "Bienvenido ala Calculadora de Huella de Carbono  \nEscoje alguna de las telas disponibles : \n 1 Poliester \n 2 Lana \n 3 Algodon \n Digita tu opcion : "));
             switch(op){
 
                 case 1 :
-                peso = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el peso de la prenda : "));
+                peso = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el peso de la prenda : (en Gramos) "));
                 trayecto = Double.parseDouble(JOptionPane.showInputDialog(null, " Ingresa el trayecto que haces por al comprar la predan ( km )"));
                 resultado1 = (peso*Poliester);
                 resultado2 = (peso*maquina);
@@ -54,7 +48,7 @@ public class Calcular {
 
                 break;
                 case 2 :                   
-                peso = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el peso de la prenda : "));
+                peso = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el peso de la prenda :(en gramos)"));
                 trayecto = Double.parseDouble(JOptionPane.showInputDialog(null, " Ingresa el trayecto que haces por al comprar la predan ( km )"));
                 resultado1 = (peso*Lana);
                 resultado2 = (peso*maquina);
@@ -73,7 +67,7 @@ public class Calcular {
 
                 case 3 :
                 
-                peso = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el peso de la prenda : "));
+                peso = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el peso de la prenda : (en gramos)"));
                 trayecto = Double.parseDouble(JOptionPane.showInputDialog(null, " Ingresa el trayecto que haces por al comprar la predan ( Km )"));
                 resultado1 = (peso*Algodon);
                 resultado2 = (peso*maquina);
@@ -93,23 +87,7 @@ public class Calcular {
             }
 
         }catch(Exception p){
-            JOptionPane.showMessageDialog(null, "error");
+            JOptionPane.showMessageDialog(null, "No me rompa");
         }
-
-        
-
-      
-
-    
-
-
-
-
-
-
-
-
     }
-       
-    
 }
